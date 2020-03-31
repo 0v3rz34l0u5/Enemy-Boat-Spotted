@@ -1,4 +1,3 @@
-## Gets the location of Steam depending on CPU architecture
 $cpu = (Get-WMIObject Win32_Processor).AddressWidth
 if ($cpu -eq 64) {
         $regSteamKey = "HKLM:\SOFTWARE\WOW6432Node\Valve\Steam" }
