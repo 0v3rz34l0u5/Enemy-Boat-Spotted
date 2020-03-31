@@ -17,6 +17,6 @@ $coopShortcutFile = "$($env:APPDATA)\$($startMenuFolder)\$($coopShortcutFilename
 $pvpShortcutFilename = "EBS PVP Insurgency Sandstorm Server.lnk"
 $pvpShortcutFile = "$($env:APPDATA)\$($startMenuFolder)\$($pvpShortcutFilename)"
 del "$insurgencySandstormFolder\$coopBatchFileName"
-del "$insurgencySandstormFolder\$pvpBatchFileName"
+## del "$insurgencySandstormFolder\$pvpBatchFileName"
 del "$coopShortcutFile"
-del "$pvpShortcutFile"
+## del "$pvpShortcutFile"
