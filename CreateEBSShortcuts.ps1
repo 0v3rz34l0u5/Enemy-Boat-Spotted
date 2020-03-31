@@ -39,21 +39,21 @@ $coopShortcut = $WshShell.CreateShortcut($coopShortcutFile)
 $coopShortcut.TargetPath = $coopbatchFile
 $coopShortcut.IconLocation = "$($iconFile),0"
 $coopShortcut.Save()
-$pvpBatchFileName = "ebspvpserver.bat"
-$pvpbatchFile = "$($insurgencySandstormFolder)\$($pvpBatchFileName)"
-$WriteCMDList = @"
-echo off
-set steamFolder=$steamFolder
-set serverIPandPort=178.32.157.60:27102
-cd %steamFolder%
-cmd.exe /c echo %serverIPandPort%|clip
-steam.exe -applaunch 581320
-"@ 
-$WriteCMDList | Out-File -FilePath $pvpBatchFile -Encoding ASCII
-$WshShell = New-Object -ComObject WScript.Shell
-$pvpShortcutFilename = "EBS PVP Insurgency Sandstorm Server.lnk"
-$pvpShortcutFile = "$($env:APPDATA)\$($startMenuFolder)\$($pvpShortcutFilename)"
-$pvpShortcut = $WshShell.CreateShortcut($pvpShortcutFile)
-$pvpShortcut.TargetPath = $pvpBatchFile
-$pvpShortcut.IconLocation = "$($iconFile),0"
-$pvpShortcut.Save()
+## $pvpBatchFileName = "ebspvpserver.bat"
+## $pvpbatchFile = "$($insurgencySandstormFolder)\$($pvpBatchFileName)"
+## $WriteCMDList = @"
+## echo off
+## set steamFolder=$steamFolder
+## set serverIPandPort=178.32.157.60:27102
+## cd %steamFolder%
+## cmd.exe /c echo %serverIPandPort%|clip
+## steam.exe -applaunch 581320
+## "@ 
+## $WriteCMDList | Out-File -FilePath $pvpBatchFile -Encoding ASCII
+## $WshShell = New-Object -ComObject WScript.Shell
+## $pvpShortcutFilename = "EBS PVP Insurgency Sandstorm Server.lnk"
+## $pvpShortcutFile = "$($env:APPDATA)\$($startMenuFolder)\$($pvpShortcutFilename)"
+## $pvpShortcut = $WshShell.CreateShortcut($pvpShortcutFile)
+## $pvpShortcut.TargetPath = $pvpBatchFile
+## $pvpShortcut.IconLocation = "$($iconFile),0"
+## $pvpShortcut.Save()
