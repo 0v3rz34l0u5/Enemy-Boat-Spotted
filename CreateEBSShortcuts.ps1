@@ -25,7 +25,7 @@ $coopbatchFile = "$($insurgencySandstormFolder)\$($coopBatchFileName)"
 $WriteCMDList = @"
 echo off
 set steamFolder=$steamFolder
-set serverIPandPort=164.132.118.71:7777
+set serverIPandPort=87.98.157.13:7777
 cd %steamFolder%
 cmd.exe /c echo %serverIPandPort%|clip
 steam.exe -applaunch 581320
